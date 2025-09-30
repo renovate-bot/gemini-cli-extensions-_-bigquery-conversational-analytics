@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1](https://github.com/gemini-cli-extensions/bigquery-conversational-analytics/compare/0.1.0...0.1.1) (2025-09-30)
+
+
+### Features
+
+* additional instructions for the context file ([#28](https://github.com/gemini-cli-extensions/bigquery-conversational-analytics/issues/28)) ([0014c2b](https://github.com/gemini-cli-extensions/bigquery-conversational-analytics/commit/0014c2b51e50339c3f8a551a32f2da38d3e830f9))
+* standardize mcp server names ([#25](https://github.com/gemini-cli-extensions/bigquery-conversational-analytics/issues/25)) ([c833e93](https://github.com/gemini-cli-extensions/bigquery-conversational-analytics/commit/c833e93ceee5755da04daea4eba571e76e9e17bb))
+
 ## 0.1.0 (2025-09-22)
 
 
