@@ -1,5 +1,12 @@
 
-## BigQuery Conversational Analytics MCP Server 
+
+# Setup
+
+## Required Gemini CLI Version
+
+To install this extension, the Gemini CLI version must be v0.6.0 or above. The version can be found by running: `gemini --version`.
+
+## BigQuery Conversational Analytics MCP Server
 
 This section covers connecting to a BigQuery instance.
 
