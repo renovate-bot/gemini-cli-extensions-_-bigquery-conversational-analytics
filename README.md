@@ -19,9 +19,6 @@ Learn more about [Gemini CLI Extensions](https://github.com/google-gemini/gemini
 * **Seamless Workflow:** Stay in your CLI. No need to constantly switch contexts to the GCP console for generating analytics insights. .
 * **Leverage prebuilt agent :** Access to advanced insights offered by a built-in agent behind  [Conversational Analytics API](https://cloud.google.com/gemini/docs/conversational-analytics-api/overview)
 
-
-
-
 ## Prerequisites
 
 Before you begin, ensure you have the following:
@@ -48,9 +45,11 @@ gemini extensions install https://github.com/gemini-cli-extensions/bigquery-conv
 
 Set the following environment variables before starting the Gemini CLI. These variables can be loaded from a `.env` file.
 
-* `BIGQUERY_PROJECT`: The GCP project ID.
-* `BIGQUERY_LOCATION`: (Optional) The dataset location.
-* `BIGQUERY_USE_CLIENT_OAUTH`: (Optional) Set to `true` to use client-side OAuth for authorization.
+```bash
+export BIGQUERY_PROJECT="<your-gcp-project-id>"
+export BIGQUERY_LOCATION="<your-dataset-location>"  # Optional
+export BIGQUERY_USE_CLIENT_OAUTH="true"  # Optional
+```
 
 Ensure [Application Default Credentials](https://cloud.google.com/docs/authentication/gcloud) are available in your environment.
 
