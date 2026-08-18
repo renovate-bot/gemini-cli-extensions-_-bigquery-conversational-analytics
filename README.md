@@ -25,6 +25,7 @@ Before you begin, ensure you have the following:
 
 * [Gemini CLI](https://github.com/google-gemini/gemini-cli) installed with version **+v0.6.0**.
 * Setup Gemini CLI [Authentication](https://github.com/google-gemini/gemini-cli/tree/main?tab=readme-ov-file#-authentication-options).
+* [Node.js](https://nodejs.org/) (the MCP server runs via `npx`).
 * A Google Cloud project with the **Data Analytics API with Gemini**, **Gemini for Google Cloud API** and **BigQuery API** enabled.
 * Ensure [Application Default Credentials](https://cloud.google.com/docs/authentication/gcloud) are available in your environment.
 * IAM Roles:
@@ -110,5 +111,5 @@ Common issues:
 
 * "failed to find default credentials: google: could not find default credentials.": Ensure [Application Default Credentials](https://cloud.google.com/docs/authentication/gcloud) are available in your environment. See [Set up Application Default Credentials](https://cloud.google.com/docs/authentication/external/set-up-adc) for more information.
 * "✖ Error during discovery for server: MCP error -32000: Connection closed": The database connection has not been established. Ensure your configuration is set via environment variables.
-* "✖ MCP ERROR: Error: spawn /Users/USER/.gemini/extensions/bigquery-conversational-analytics/toolbox ENOENT": The Toolbox binary did not download correctly. Ensure you are using Gemini CLI v0.6.0+.
-* "cannot execute binary file": The Toolbox binary did not download correctly. Ensure the correct binary for your OS/Architecture has been downloaded. See [Installing the server](https://mcp-toolbox.dev/documentation/introduction/#install-toolbox) for more information.
+* "✖ MCP ERROR: Error: spawn npx ENOENT": Node.js/`npx` is not installed or not on your `PATH`. Install Node.js (which provides `npx`).
+* "npm error"/network failures on first run: `npx` fetches `@toolbox-sdk/server` on first launch, so it needs network access. Retry once connectivity is available.
